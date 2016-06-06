@@ -72,4 +72,3 @@ final_data <- prepared_data %>%
 ## Export the final data to a text file called final_data.txt in the working directory.
 ## Each entry between columns (both column names and measurements) are single space delimited. 
 write.table(final_data, "final_data.txt", row.name = FALSE)
-
