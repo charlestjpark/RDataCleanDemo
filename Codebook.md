@@ -9,6 +9,7 @@ Of the 81 columns, the first column corresponds to the subject id. As there were
 The remaining 79 columns correspond to various mean measurements of the mean and standard deviations parsed from the original 561-feature set. Details on the original features are in the features.txt and features_info.txt files, found in the UCI HAR Dataset directory. The names for these columns were parsed by selecting any feature from the original set that was marked as calculating a mean or standard deviation, containing a text pattern "mean()" or "std()". The names were also cleaned to remove any instance of "-" or "()" in order to streamline aggregation in the summarise_each function later deployed. 
 
 ## List of parsed mean and standard deviation features
+The names of the derived features are as follows:
 "tBodyAccmeanX",
 "tBodyAccmeanY",
 "tBodyAccmeanZ",
@@ -89,7 +90,7 @@ The remaining 79 columns correspond to various mean measurements of the mean and
 "fBodyBodyGyroJerkMagstd",
 "fBodyBodyGyroJerkMagmeanFreq"
 
-The columns represent a numerical mean aggregate of the original mean and standard deviation measurements, grouped by Subject and Activity. For example, the first derived feature, tbodyAccmeanX, represents the mean of the original set of measurements labelled tBodyAcc-mean()-X for a particular subject and activity. These mean aggregates were derived from an original data set of 10,299 entries (accounting for both the training and test subjects). 
+The names above represent a numerical mean aggregate of the original mean and standard deviation measurements, grouped by Subject and Activity. For example, the first derived feature, tbodyAccmeanX, represents the mean of the original set of measurements labelled tBodyAcc-mean()-X for a particular subject and activity. These mean aggregates were derived from an original data set of 10,299 entries (accounting for both the training and test subjects). 
 
 ## High Level Description of Data Transformations
 While the comments in the run_analysis.R give the description on each stage of data transformation, the steps below give a high level summary:
