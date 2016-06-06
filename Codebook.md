@@ -10,6 +10,7 @@ The remaining 79 columns correspond to various mean measurements of the mean and
 
 ## List of parsed mean and standard deviation features
 The names of the derived features are as follows:
+
 "tBodyAccmeanX",
 "tBodyAccmeanY",
 "tBodyAccmeanZ",
